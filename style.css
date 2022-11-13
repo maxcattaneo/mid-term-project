@@ -1,0 +1,140 @@
+/*Color Styles
+#072AC8
+#43D2FF
+#A2D6F9
+#D1EDFF
+#292E47
+#6B708D
+#F2F4FC
+#ECF7FF
+#FFC600
+
+Text Styles
+Heading H1 60 Bold
+Heading H2 50 Bold
+Heading H3 40 Bold
+Heading H4 24 Bold
+Body Intro Text 24 Medium
+Body Intro Text 20 Regular
+Headline Text 17 Regular
+Headline Text 17 Medium
+Caption 1 Text 15 Regular
+Caption 2 Text 13 Regular*/
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background-color:#F2F4FC ;
+}
+h1{
+    font-size: 60px;
+}
+nav{
+    height: 122px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.nav-bar{
+    width: 1100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    list-style:none;
+}
+a:link, a:visited, a:active {
+    text-decoration:none;
+    color:#6B708D;
+}
+
+.contact{
+    width: 150px;
+    height: 50px;
+    color:white;
+    background-color: #072AC8;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero{
+    width: 530px;
+    padding-top: 100px;
+}
+.hero-image{
+    max-width:100%;
+}
+.card1{
+    width:295px;
+    height:315px;
+    position:absolute;
+    left:650px;
+    top:220px;
+}
+.card2{
+    width:295px;
+    height:295px;
+    position:absolute;
+    left:1120px;
+    top:680px;
+}
+.hero-buttons{
+    display: flex;
+    align-items: center;
+}
+p{
+    font-size: 20px;
+}
+.logos{
+    display:flex;
+    justify-content: space-evenly;
+    padding-top: 130px;
+}
+
+@media (max-width: 780px) {
+    .hero-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .card1{
+        display:none;
+    }
+    .card2{
+        display:none;
+    }
+    .logos{
+        display: grid;
+        grid-template-columns: 150px 150px;
+        grid-row-gap: 50px;
+        justify-content: center;
+        justify-items: center;
+    }
+    .mobile{
+        display: none;
+    }
+    nav .contact{
+        display: none;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .hero{
+        width: auto;
+        text-align: center;
+    }
+    .hero-buttons{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+}
