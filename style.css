@@ -12,6 +12,7 @@
 body{
     font-family:Arial, Helvetica, sans-serif;
     background-color:#F2F4FC ;
+    color: #292E47;
 }
 /*Text Styles*/
 h1{
@@ -24,7 +25,7 @@ h3{
     font-size: 40px;
 }
 h4{
-    font-size: 30px;
+    font-size: 24px;
 }
 .body-intro-med{
     font-size: 24px;
@@ -43,6 +44,12 @@ h4{
 }
 .caption2{
     font-size: 13px;
+}
+.light-text{
+    color:#F2F4FC;
+}
+.yellow-text{
+    color:#FFC600
 }
 nav{
     height: 122px;
@@ -99,6 +106,16 @@ a:hover {
     justify-content: center;
     align-items: center;
     margin-top: 50px;
+}
+.button-submit{
+    width: auto;
+    height: 80px;
+    color:white;
+    background-color: #072AC8;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .hero-section{
     display: flex;
@@ -165,7 +182,19 @@ p{
     height: 240px;
 }
 .project-text{
-    margin:30px;
+    margin:30px 30px 20px 30px;
+}
+.margin-cards{
+    margin: 0px 30px 10px 30px;
+}
+.margin-link{
+    margin: 30px;
+}
+.margin-icon{
+    margin:40px 0px 0px 40px
+}
+.margin-icon-cta{
+    margin:0px 10px 0px 30px;
 }
 .testimonial{
     display: flex;
@@ -249,8 +278,11 @@ p{
     align-items: center;
 }
 footer{
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin-top: 200px;
     margin-bottom: 100px;
 }
@@ -271,8 +303,73 @@ footer{
     grid-gap: 16px;
     list-style:none;
 }
+/*project-page*/
+.project-page{
+    display: flex;
+    flex-direction: column;
+    width: 1100px;
+}
+.project-page-image{
+    width: 1100px;
+    height: 444px;
+    object-fit: cover;
+    filter: drop-shadow(5px 5px 50px rgba(255, 0, 217,30%));
+    
+}
+.project-section{
+    width: 1100px;
+    margin-top:0px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+.project-display{
+    display: flex;
+    justify-content: space-between;
+}
+/*Contact Us page*/
+.contact-us-form{
+    width: 1100px;
+    height:735px;
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.form-big{
+    width: auto;
+    height: 70px;
+    padding-left: 20px;
+    margin-bottom: 16px;
+    display:flex;
+    align-items: center;
+    background-color:rgba(107, 112, 141, 0.1) ;
+}
+.form-small{
+    width: 520px;
+    height: 70px;
+    padding-left: 20px;
+    margin-right: 0px;
+    display:flex;
+    align-items: center;
+    background-color:rgba(107, 112, 141, 0.1) ;
+}
+.form-text{
+    width: auto;
+    height: 200px;
+    padding: 20px 0px 0px 20px;
+    margin-bottom: 30px;
+    background-color:rgba(107, 112, 141, 0.1) ;
+}
+.form-display{
+    display: flex;
+    justify-content: space-between;
+}
 
 @media (max-width: 780px) {
+    body{
+        margin:0px;
+    }
     .hero-section{
         display: flex;
         flex-direction: column;
@@ -329,6 +426,7 @@ footer{
     .project{
         width: auto;
         align-items: center;
+        margin-top: 0px;
     }
     .project-cards{
         flex-direction: column;
@@ -338,6 +436,7 @@ footer{
         height: 430px;
         margin-top: 50px;
         margin-bottom: 50px;
+        background-image: none;
     }
     .our-services{
         width: auto;
@@ -347,11 +446,16 @@ footer{
         flex-direction: column;
     }
     footer{
+        width:auto;
         flex-direction: column;
         align-items: center;
+        margin: 50px 0px 100px 0px;
     }
     .footer-div{
         align-items: center;
+    }
+    .footer-list{
+        padding: 0px;
     }
     .cta{
         width: auto;
@@ -373,5 +477,37 @@ footer{
     .emoji4{
         display:none;
     }
+    .button-suscribe{
+        width: 250px;
+        margin-top: 20px;
+    }
+    .cta-email{
+        width: 250px;
+    }
+    .contact-us-form{
+        width: auto;
+        margin-top: 0px;
+        padding: 0px 30px;
+    }
+    .form-display{
+        flex-direction: column;
+    }
+    .form-small{
+        width: auto;
+    }
+    .project-section{
+        width: auto;
+        align-items: center;
+    }
+    .project-page{
+        width: auto;
+    }
+    .project-page-image{
+        width: 100%;
+    }
+    .project-display{
+        flex-direction: column;
+    }
+    
 
 }
