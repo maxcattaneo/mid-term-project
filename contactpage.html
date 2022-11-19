@@ -12,7 +12,7 @@
         <div class="nav-bar">
             <img src="./images/logos/Logo2.svg" alt="logo circle">
             <ul class="menu">
-                <li><a href="#">Home</a></li>
+                <li><a href="homepage.html">Home</a></li>
                 <li><a href="#">Project</a></li>
                 <li><a href="#">Services</a></li>
             </ul>
@@ -23,27 +23,49 @@
     </nav>
     <section class="contact-us-form">
         <div><h1>Contact Us</h1></div>
+        <form>
         <div>
             <div>
-                <span class="body-intro-reg">Full Name*</span>
-                <div class="form-big">Enter your full name</div>
+                <label class="body-intro-reg" for="name">Full Name*</label>
+            </div> 
+            <div>
+                <input type="text" id="name" name="user_name" class="form-big" placeholder="Enter your full name" required>
             </div>
-            <div class="form-display">
+               
+            <div class="small-row">
                 <div>
-                    <span class="body-intro-reg" >Email</span>
-                    <div class="form-small">Enter your email</div>
+                    <div>
+                        <label class="body-intro-reg" for="mail">Email</label>
+                    </div> 
+                    <div>
+                        <input type="email" id="mail" name="user_mail" class="form-small" placeholder="Enter your mail">
+                    </div>
                 </div>
                 <div>
-                    <span class="body-intro-reg">Phone</span>
-                    <div class="form-small">Enter your phone</div>
+                    <div>
+                        <label class="body-intro-reg" for="phone">Phone</label>
+                    </div> 
+                    <div>
+                        <input type="tel" id="phone" name="user_phone" class="form-small" placeholder="Enter your phone">
+                    </div>
                 </div>
             </div>
             <div>
-                <span class="body-intro-reg">Message*</span>
-                <div class="form-text">Write your message here ....</div>
+                <div>
+                    <label class="body-intro-reg" for="name">Message*</label>
+                </div> 
+                <div>
+                    <textarea class="form-text" id="message" name="user_message" rows="4" placeholder="Write your message here ..." required></textarea>
+                </div>
+                <div>
+                    <input class="button-submit" type="submit" value="Submit">
+                    
+                </div>
+            
             </div>
         </div>
-        <div class="button-submit">Submit</div>
+    </form>
+       
     </section>
     <footer>
         <div class="footer-div">

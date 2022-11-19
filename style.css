@@ -29,6 +29,8 @@ h4{
 }
 .body-intro-med{
     font-size: 24px;
+    font-weight: 540;
+    line-height: 115%;
 }
 .body-intro-reg{
     font-size: 20px;
@@ -49,7 +51,9 @@ h4{
     color:#F2F4FC;
 }
 .yellow-text{
-    color:#FFC600
+    color:#FFC600;
+    width: 560px;
+    text-align: center;
 }
 nav{
     height: 122px;
@@ -108,9 +112,10 @@ a:hover {
     margin-top: 50px;
 }
 .button-submit{
-    width: auto;
+    width: 100%;
     height: 80px;
     color:white;
+    border: none;
     background-color: #072AC8;
     font-size: 17px;
     display: flex;
@@ -328,6 +333,15 @@ footer{
     display: flex;
     justify-content: space-between;
 }
+.h1-margin{
+    margin:90px 0px 10px 0px;
+}
+.image-margin{
+    margin: 80px 0px 50px 0px;
+}
+.Completed{
+    margin-right: 5px;
+}
 /*Contact Us page*/
 .contact-us-form{
     width: 1100px;
@@ -337,31 +351,34 @@ footer{
     margin-right: auto;
 }
 .form-big{
-    width: auto;
+    width: 100%;
     height: 70px;
-    padding-left: 20px;
+    padding: 0px;
     margin-bottom: 16px;
+    margin-top: 10px;
+    border: none;
     display:flex;
     align-items: center;
     background-color:rgba(107, 112, 141, 0.1) ;
 }
 .form-small{
-    width: 520px;
+    width:540px;
     height: 70px;
-    padding-left: 20px;
-    margin-right: 0px;
-    display:flex;
-    align-items: center;
+    border: none;
+    margin-bottom: 20px;
+    margin-top: 10px;
     background-color:rgba(107, 112, 141, 0.1) ;
 }
 .form-text{
-    width: auto;
+    width: 100%;
     height: 200px;
-    padding: 20px 0px 0px 20px;
+    border: none;
+    padding: 0px;
     margin-bottom: 30px;
+    margin-top: 10px;
     background-color:rgba(107, 112, 141, 0.1) ;
 }
-.form-display{
+.small-row{
     display: flex;
     justify-content: space-between;
 }
