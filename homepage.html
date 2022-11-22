@@ -52,7 +52,7 @@
         <div class="project-cards">
             <div  class="project-card">
                 <div>
-                    <img class="project-image" src="./images/projects-section/1.jpg" alt="">
+                    <img id="img1" class="project-image" src="./images/projects-section/1.jpg" alt="">
                 </div>
                 <div>
                     <div class="body-intro-med project-text">Simplify</div>
@@ -126,13 +126,18 @@
         <div class="cta">
             <div><h2>Do you have any questions?</h2></div>
             <div>Let us help you!</div>
-            <div class="hero-buttons">
-                <div class="cta-email">
-                    <img class="margin-icon-cta" src="./images/newsletter/icon/mail.svg" alt="">
-                    Enter your email
+            <form id="form">
+                <div class="hero-buttons">
+                    <div class="cta-email">
+                        <img class="margin-icon-cta" src="./images/newsletter/icon/mail.svg" alt="">
+                        <input type="email" id="email" name="user_mail" class="placeholder" placeholder="Enter your email">
+                    </div>
+                    <div>
+                        <input class="button-suscribe" type="submit" value="Suscribe" onclick="validarCorreo(form.email.value)">
+                     </div>
                 </div>
-                <div class="button-suscribe">Suscribe</div>
-            </div>
+            </form>
+            <p class="error-email" id="error-email"> hhh</p>
 
         </div>
     </section>
@@ -152,5 +157,6 @@
             </ul>
         </div>
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>

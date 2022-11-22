@@ -105,6 +105,7 @@ a:hover {
     height: 80px;
     color:white;
     background-color: #072AC8;
+    border: none;
     font-size: 17px;
     display: flex;
     justify-content: center;
@@ -281,6 +282,19 @@ p{
     margin-top: 50px;
     display: flex;
     align-items: center;
+}
+.placeholder{
+    width: 100%;
+    font-size: 17px;
+    border: none;
+
+}
+.error-email{
+    width: 200px;
+    text-align: center;
+    margin:auto;
+    color:red;
+    padding-top: 20px;
 }
 footer{
     width: 1100px;
@@ -506,11 +520,8 @@ footer{
         margin-top: 0px;
         padding: 0px 30px;
     }
-    .form-display{
-        flex-direction: column;
-    }
     .form-small{
-        width: auto;
+        width: 100%;
     }
     .project-section{
         width: auto;
@@ -525,6 +536,8 @@ footer{
     .project-display{
         flex-direction: column;
     }
-    
+    .small-row{
+        flex-direction: column;
+    }
 
 }
