@@ -1,3 +1,29 @@
+//FECHA JS
+
+const today = new Date();
+let day = today.getDate();
+let month = today.getMonth() + 1 ;
+let year = today.getFullYear();
+
+let fulldate = `${day}/${month}/${year}`;
+
+if(document.getElementById("full-date")){
+    document.getElementById("full-date").innerHTML = `${fulldate}`;
+}
+
+async function projectSeis(){
+    const res = await fetch('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita');
+    const data = await res.json();
+    const coctel = (data.drinks[5].strDrink);
+    const category = (data.drinks[5].strGlass);
+    const recipe = (data.drinks[5].strInstructions);
+    const image = (data.drinks[5].strDrinkThumb);
+    document.querySelector('#coctelname6').innerHTML = coctel;
+    document.querySelector('#recipe6').innerHTML= recipe;
+    document.querySelector('#glass6').innerHTML= category;
+    document.getElementById('coctelimg6').src = image;
+}
+projectSeis()
 
 async function recentsProjects(){
     const res = await fetch('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita');
@@ -22,31 +48,3 @@ async function recentsProjects(){
     document.getElementById('image3').src = image3;
 }
 recentsProjects()
-
-/*const email = document.getElementById("email")
-const form = document.getElementById("form")
-const paragraph = document.getElementById("error-email")
-
-form.addEventListener("submit", e =>{
-    e.preventDefault()
-    let error = ""
-    let enter = false
-    let regExEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/
-    if(!regExEmail.test(email.value)){
-        error += `El mail no es válido`
-        enter = true
-    } 
-    if(enter){
-        paragraph.innerHTML = error
-    }
-   
-}
-)*/
-/*const paragraph = document.getElementById("error-email")
-function validarCorreo(email){
-    let regExEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
-    let validacion = regExEmail.test(email);
-    if (validacion = false){
-        paragraph = `Upps mail trucho`
-    }
-}*/
