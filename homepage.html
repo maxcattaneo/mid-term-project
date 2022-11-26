@@ -130,14 +130,14 @@
                 <div class="hero-buttons">
                     <div class="cta-email">
                         <img class="margin-icon-cta" src="./images/newsletter/icon/mail.svg" alt="">
-                        <input type="email" id="email" name="user_mail" class="placeholder" placeholder="Enter your email">
+                        <input type="email" id="email" name="email" class="placeholder" placeholder="Enter your email">
                     </div>
                     <div>
-                        <input class="button-suscribe" type="submit" value="Suscribe">
+                        <input class="button-suscribe" type="submit" onclick="validarCorreo(email.value)" value="Suscribe">
                      </div>
                 </div>
             </form>
-            <p class="error-email" id="error-email"> hhh</p>
+            <p class="error-email" id="error-email"></p>
         </div>
     </section>
     <footer>

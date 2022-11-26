@@ -290,10 +290,11 @@ p{
 
 }
 .error-email{
-    width: 200px;
+    width: 350px;
     text-align: center;
     margin:auto;
     color:red;
+    font-weight:600;
     padding-top: 20px;
 }
 footer{

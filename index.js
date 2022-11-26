@@ -23,30 +23,14 @@ async function recentsProjects(){
 }
 recentsProjects()
 
-/*const email = document.getElementById("email")
-const form = document.getElementById("form")
-const paragraph = document.getElementById("error-email")
-
-form.addEventListener("submit", e =>{
-    e.preventDefault()
-    let error = ""
-    let enter = false
-    let regExEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/
-    if(!regExEmail.test(email.value)){
-        error += `El mail no es válido`
-        enter = true
-    } 
-    if(enter){
-        paragraph.innerHTML = error
-    }
-   
-}
-)*/
-/*const paragraph = document.getElementById("error-email")
-function validarCorreo(email){
+function validarCorreo(valor){
     let regExEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
-    let validacion = regExEmail.test(email);
-    if (validacion = false){
-        paragraph = `Upps mail trucho`
+    let error = "";
+    let paragraph = document.getElementById("error-email");
+    if(!regExEmail.test(valor)){
+        error += `Upss el email no es válido, ingrese un formato de email válido.`
     }
-}*/
+    if(error.length > 0 ){
+        paragraph.innerHTML = error;
+    }
+}
