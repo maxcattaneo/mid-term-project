@@ -91,6 +91,13 @@ a:hover {
     justify-content: center;
     align-items: center;
 }
+a.button{
+    color:white;
+}
+a.button:hover{
+    background-color: #6B708D;
+    color:white;
+}
 .button-secundary{
     width: 150px;
     height: 50px;
