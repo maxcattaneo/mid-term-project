@@ -119,6 +119,9 @@ a.button:hover{
     align-items: center;
     margin-top: 50px;
 }
+.button-suscribe:hover{
+    background-color: #6B708D;
+}
 .button-submit{
     width: 100%;
     height: 80px;
@@ -129,6 +132,9 @@ a.button:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.button-submit:hover{
+    background-color: #6B708D;
 }
 .hero-section{
     display: flex;
@@ -292,9 +298,11 @@ p{
 }
 .placeholder{
     width: 100%;
+    height: 100%;
+    padding: 0px;
     font-size: 17px;
     border: none;
-
+    outline: none;
 }
 .error-email{
     width: 350px;
@@ -375,30 +383,37 @@ footer{
 .form-big{
     width: 100%;
     height: 70px;
-    padding: 0px;
+    padding: 0px 20px;
     margin-bottom: 16px;
     margin-top: 10px;
     border: none;
     display:flex;
     align-items: center;
     background-color:rgba(107, 112, 141, 0.1) ;
+    outline: none;
+    box-sizing: border-box;
 }
 .form-small{
     width:540px;
     height: 70px;
+    padding: 0px 20px;
     border: none;
     margin-bottom: 20px;
     margin-top: 10px;
     background-color:rgba(107, 112, 141, 0.1) ;
+    outline: none;
+    box-sizing: border-box;
 }
 .form-text{
     width: 100%;
     height: 200px;
     border: none;
-    padding: 0px;
+    padding: 20px;
     margin-bottom: 30px;
     margin-top: 10px;
     background-color:rgba(107, 112, 141, 0.1) ;
+    outline: none;
+    box-sizing: border-box;
 }
 .small-row{
     display: flex;

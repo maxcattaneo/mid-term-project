@@ -46,3 +46,18 @@ async function recentsProjects(){
     document.getElementById('image3').src = image3;
 }
 recentsProjects()
+
+function validarCorreo(valor){
+    let regExEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
+    let error = "";
+    let paragraph = document.getElementById("error-email");
+    if(!regExEmail.test(valor)){
+        error += `Upss el email no es válido, ingrese un formato de email válido.`
+    }
+    if(regExEmail.test(valor)){
+        error += `Correcto.`
+    }
+    if(error.length > 0 ){
+        paragraph.innerHTML = error;
+    }
+}

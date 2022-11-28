@@ -84,13 +84,18 @@
         <div class="cta">
             <div><h2>Do you have any questions?</h2></div>
             <div>Let us help you!</div>
-            <div class="hero-buttons">
-                <div class="cta-email">
-                    <img class="margin-icon-cta" src="./images/newsletter/icon/mail.svg" alt="">
-                    Enter your email
+            <form id="form">
+                <div class="hero-buttons">
+                    <div class="cta-email">
+                        <img class="margin-icon-cta" src="./images/newsletter/icon/mail.svg" alt="">
+                        <input type="email" id="email" name="email" class="placeholder" placeholder="Enter your email">
+                    </div>
+                    <div>
+                        <input class="button-suscribe" type="submit" onclick="validarCorreo(email.value)" value="Suscribe">
+                     </div>
                 </div>
-                <div class="button-suscribe">Suscribe</div>
-            </div>
+            </form>
+            <p class="error-email" id="error-email"></p>
         </div>
     </section>
     <footer>

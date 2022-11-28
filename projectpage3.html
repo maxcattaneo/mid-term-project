@@ -16,17 +16,17 @@
                 <li><a href="#">Project</a></li>
                 <li><a href="#">Services</a></li>
             </ul>
-            <a href =contactpage.html class="button">Contact Us</a>  
+            <a href =contactpage.html class="button">Contact Us</a>    
         </div>
     </nav>
     <section class="project-section">
         <div class="project-page">
             <div>
                 <div>
-                    <h1 id="prodoscoctel" class="h1-margin">Simplify</h1>
+                    <h1 id="prodoscoctel2" class="h1-margin">Simplify</h1>
                 </div>
                 <div class="project-display">
-                    <div id="prodosglass" class="body-intro-med">UI Design & App Development</div>
+                    <div id="prodosglass2" class="body-intro-med">UI Design & App Development</div>
                     <div class="project-display body-intro-reg">
                         <div class="Completed">Completed on </div>
                         <div id="full-date">16/11/2022</div>
@@ -34,11 +34,11 @@
                 </div>
             </div>
             <div class="image-margin">
-                <img id="prodosima"class="project-page-image" src="./images/projects-section/1.jpg" alt="">
+                <img id="prodosima2"class="project-page-image" src="./images/projects-section/1.jpg" alt="">
             </div>
             <div>
                 <p class="body-intro-med">Instructions</p>
-                <p id="prodosreci">Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt quix duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.</p>
+                <p id="prodosreci2">Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt quix duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.</p>
             </div>
 
         </div>
@@ -55,7 +55,7 @@
                 <div>
                     <div id="coctel4"class="body-intro-med project-text">Orbit</div>
                     <div id="category4"class="margin-cards">UI Design & App Development</div>
-                    <div class="margin-link"><a href="projectpagecuatro.html">Learn more</a></div>
+                    <div class="margin-link"><a href="projectpage4.html">Learn more</a></div>
                 </div>
             </div>
             <div class="project-card">
@@ -84,13 +84,18 @@
         <div class="cta">
             <div><h2>Do you have any questions?</h2></div>
             <div>Let us help you!</div>
-            <div class="hero-buttons">
-                <div class="cta-email">
-                    <img class="margin-icon-cta" src="./images/newsletter/icon/mail.svg" alt="">
-                    Enter your email
+            <form id="form">
+                <div class="hero-buttons">
+                    <div class="cta-email">
+                        <img class="margin-icon-cta" src="./images/newsletter/icon/mail.svg" alt="">
+                        <input type="email" id="email" name="email" class="placeholder" placeholder="Enter your email">
+                    </div>
+                    <div>
+                        <input class="button-suscribe" type="submit" onclick="validarCorreo(email.value)" value="Suscribe">
+                     </div>
                 </div>
-                <div class="button-suscribe">Suscribe</div>
-            </div>
+            </form>
+            <p class="error-email" id="error-email"></p>
         </div>
     </section>
     <footer>
@@ -109,6 +114,6 @@
             </ul>
         </div>
     </footer>
-    <script src="page2.js"></script>
+    <script src="page3.js"></script>
 </body>
 </html>
