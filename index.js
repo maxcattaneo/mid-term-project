@@ -31,7 +31,7 @@ function validarCorreo(valor){
         error += `Upss el email no es válido, ingrese un formato de email válido.`
     }
     if(regExEmail.test(valor)){
-        error += `Correcto.`
+        error += `Submitted successfully.`
     }
     if(error.length > 0 ){
         paragraph.innerHTML = error;
