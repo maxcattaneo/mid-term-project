@@ -52,10 +52,10 @@ function validarCorreo(valor){
     let error = "";
     let paragraph = document.getElementById("error-email");
     if(!regExEmail.test(valor)){
-        error += `Upss el email no es válido, ingrese un formato de email válido.`
+        error += `Please submit a valid email so that we can reply to your query.`
     }
     if(regExEmail.test(valor)){
-        error += `Correcto.`
+        error += `Submitted successfully.`
     }
     if(error.length > 0 ){
         paragraph.innerHTML = error;
